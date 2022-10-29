@@ -1,9 +1,11 @@
 def buildStatus    = "FAILED"
 def slackColor     = "warning"
-def slackChannelID = 'C03NE82PLMQ'
+def slackChannelID = 'D03LPSW6M9S'
+
 
 pipeline {
-  agent any
+  agent any./mvn clean test
+
   tools {
     maven 'Maven 3.3.9'
     jdk 'jdk8'
