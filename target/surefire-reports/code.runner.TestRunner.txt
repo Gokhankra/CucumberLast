@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: Functional testing on Orange HRM
+Test set: code.runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.455 s - in Functional testing on Orange HRM
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.417 s - in code.runner.TestRunner

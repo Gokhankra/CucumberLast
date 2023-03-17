@@ -8,7 +8,7 @@ Feature: Fill out Conctact us form
     And User verifies success full message "Your message has been succesfully sent to our team."
     Examples:
     |Sheetname| RowNumber|
-    |contactus|     0         |
+    |contactus|     0    |
     |contactus |    1    |
 
   #  @TCDENEME

@@ -16,6 +16,7 @@ code/stepsDefinitions/guru99loginDTT.class
 code/pages/TEstlogin.class
 code/runner/Failedrunner.class
 code/utils/Driver.class
+code/stepsDefinitions/hoverover.class
 code/stepsDefinitions/LinkUrl.class
 code/pages/OrangeHRMAdmin.class
 code/stepsDefinitions/guru99TelecomSteps.class
