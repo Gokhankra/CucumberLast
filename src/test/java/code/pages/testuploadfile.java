@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class testuploadfile extends BrowserUtils {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
 
      Driver.getDriver().get("https://demo.guru99.com/test/upload/");
        WebElement choosefile=Driver.getDriver().findElement(By.xpath("//*[@type='file']"));
@@ -67,13 +67,34 @@ String pathoffile="src/excelsheett.txt";
        Driver.closeDriver();
 
         */
-      uploadtranscrip(choosefile);
+      choosefile.sendKeys(uploadtranscrip());
+        Driver.getDriver().findElement(By.id("submitbutton")).click();
+        Thread.sleep(5000);
+        DeleteTranscript(uploadtranscrip());
+        Driver.getDriver().close();
+
 
     }
 
-    public  static void uploadtranscrip(WebElement location){
+    public  static String uploadtranscrip() throws IOException {
 
-        File f=new File("src/a.txt");
-        location.sendKeys(f.getAbsolutePath());
+        String path="src/transcript.text";
+        File f=new File(System.getProperty("user.dir")+path);
+        f.setWritable(true);
+        f.setReadable(true);
+        FileWriter fw=new FileWriter(f.getAbsolutePath());
+        String adv="advisorDVISOSEA";
+        fw.write("Gkhnkarararar   "+adv+"    asdadasdasdasd");
+        fw.close();
+
+        return f.getAbsolutePath();
     }
+
+    public static void DeleteTranscript(String Path){
+
+        File fl=new File(Path);
+        fl.delete();
+    }
+
+
 }

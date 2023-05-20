@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
+import java.io.File;
+
 public class Driver {
 
     //This is our driver that we will use throughout the framework
@@ -25,6 +27,12 @@ public class Driver {
                     case "firefox":
                         WebDriverManager.firefoxdriver().setup();
                         driverPool.set(new FirefoxDriver());
+                        break;
+                    case "gk":
+                        File drivergk=new File(System.getProperty("user.dir")+"/driver/chromedriver.exe");
+                        System.setProperty("webdriver.chrome.driver",drivergk.getAbsolutePath());
+                        WebDriverManager.chromedriver().setup();
+                        driverPool.set(new ChromeDriver());
                         break;
                     case "edge":
                         WebDriverManager.edgedriver().setup();
