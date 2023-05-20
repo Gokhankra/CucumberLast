@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         glue = "code/stepsDefinitions",//This is to connect steps with runner class
         //We need to copy path from source root or content root sometimes reference root
         tags= "@TC12", // when we tag our scenario and just run it
-        dryRun = false, //This is to get undefined steps without opening up browser  when u use TRUE it will gie us steps to generate and always important
+        dryRun =false, //This is to get undefined steps without opening up browser  when u use TRUE it will gie us steps to generate and always important
         plugin = {
         "pretty", // this is to have more understandable console logs.
         "rerun:target/rerun.txt",// this will help us to store failed scenarios in rerun.t

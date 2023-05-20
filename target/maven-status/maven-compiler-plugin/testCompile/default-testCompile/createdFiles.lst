@@ -12,6 +12,7 @@ code/utils/BrowserUtils.class
 code/test.class
 code/stepsDefinitions/OrangeHRMSteps.class
 code/pages/guru99GatewayHome.class
+code/pages/testuploadfile.class
 code/stepsDefinitions/guru99loginDTT.class
 code/pages/TEstlogin.class
 code/runner/Failedrunner.class
@@ -23,3 +24,4 @@ code/stepsDefinitions/guru99TelecomSteps.class
 code/pages/OrangeHRMLogin.class
 code/pages/OrangeHRMHome.class
 code/pages/guru99GatewayOrderSuccess.class
+code/pages/systemfiles.class

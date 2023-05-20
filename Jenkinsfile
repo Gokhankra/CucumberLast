@@ -22,11 +22,6 @@ pipeline{
                   slackColor="good"
                }
             }
-            cleanup{
-                script{
-                    slackSend channel: "D03LPSW6M9S", color: "${slackColor}", message: "*@channel ${buildStatus}*: `${env.JOB_NAME}` *#${env.BUILD_NUMBER}* \n<${env.BUILD_URL}/console|Console Log>"
-            }
-         }
       }
    }
   }
