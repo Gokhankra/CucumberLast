@@ -7,7 +7,7 @@ pipeline{
         cron 'H 2,16 * * *'
     }
     stages{
-        stage('Run Tests'){
+        stage('Run Tests Stage 12'){
            steps{
               sh './mvnw clean test'
         }

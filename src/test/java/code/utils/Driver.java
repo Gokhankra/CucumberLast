@@ -28,7 +28,7 @@ public class Driver {
                         WebDriverManager.firefoxdriver().setup();
                         driverPool.set(new FirefoxDriver());
                         break;
-                    case "gk":
+                    case "rc":
                         File drivergk=new File(System.getProperty("user.dir")+"/driver/chromedriver.exe");
                         System.setProperty("webdriver.chrome.driver",drivergk.getAbsolutePath());
                         WebDriverManager.chromedriver().setup();
