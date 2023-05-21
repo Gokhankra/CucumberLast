@@ -19,7 +19,6 @@ pipeline{
             success{
                script{
                   buildStatus="SUCCESS"
-                  slackColor="good"
                }
             }
       }
